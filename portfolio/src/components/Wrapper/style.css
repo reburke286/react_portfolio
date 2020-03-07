@@ -1,0 +1,7 @@
+.wrapper {
+  /* background-image: url("/public/assets/images/old_moon.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 1000px;
+}

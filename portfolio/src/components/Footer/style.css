@@ -1,0 +1,11 @@
+#footer {
+  border-top-style: solid;
+  border-top-width: 8px;
+  border-top-color: teal;
+}
+
+#pfooter {
+  text-align: center;
+  width: 100%;
+  color: gray;
+}
