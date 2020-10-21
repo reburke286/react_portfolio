@@ -12,7 +12,7 @@ function About() {
               <img
                 src="assets/images/portfolio1.jpg"
                 className="img-fluid"
-                alt="Responsive image"
+                alt="Responsive"
               />
               <div className="col-md-9">
                 <p>

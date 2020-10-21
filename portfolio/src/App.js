@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import { BrowserRouter, Route, Switch} from "react-router-dom";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -10,24 +9,23 @@ import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <Router>
-      <div>
+    <div className="app">
+    <BrowserRouter>
         <NavBar />
         <Wrapper>
+          <Switch>
           <Route
-            exact
-            path="/"
-            render={() => {
-              return <h1>About Becca</h1>;
-            }}
+            exact path="/"
+            component={About}
           />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/portfolio" component={Portfolio} />
+          </Switch>
         </Wrapper>
         <Footer />
-      </div>
-    </Router>
+    </BrowserRouter>
+    </div>
   );
 }
 

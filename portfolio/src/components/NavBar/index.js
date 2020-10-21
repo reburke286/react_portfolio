@@ -1,59 +1,60 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
+import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon } from 'mdbreact';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function Navbar() {
-  return (
-    <div className="row" id="navContainer">
-      <div className="col-md-6 pl-0 pr-0 pb-0">
-        <nav className="navbar navbar-light pt-0 pb-0 mt-0 mb-0 pl-0 pr-0">
-          <span className="navbar-brand h1" id="h1">
-            Becca Burke
-          </span>
-        </nav>
+class Navbar extends React.Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+          collapse: false,
+      };
+      this.onClick = this.onClick.bind(this);
+  }
+
+  onClick() {
+    this.setState({
+        collapse: !this.state.collapse,
+      });
+  }
+
+  render() {
+    const bgBlue = {backgroundColor: '#e91e63'}
+    // const container = {height: 1300}
+    return(
+      <div>
+          <header>
+            <MDBNavbar style={bgBlue} dark expand="md" scrolling fixed="top">
+              <MDBNavbarBrand href="/about">
+                  <strong>About</strong>
+              </MDBNavbarBrand>
+              <MDBNavbarToggler onClick={ this.onClick } />
+              <MDBCollapse isOpen = { this.state.collapse } navbar>
+                <MDBNavbarNav left>
+                  <MDBNavItem>
+                      <MDBNavLink to="/contact">Contact</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
+                  </MDBNavItem>
+                </MDBNavbarNav>
+                <MDBNavbarNav right>
+                  <MDBNavItem>
+                    <MDBNavLink to="#"><MDBIcon fab icon="facebook-f" /></MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#"><MDBIcon fab icon="twitter" /></MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#"><MDBIcon fab icon="instagram" /></MDBNavLink>
+                  </MDBNavItem>
+                </MDBNavbarNav>
+              </MDBCollapse>
+            </MDBNavbar>
+          </header>
       </div>
-      <div className="col-md-6 pl-0 pr-0 pb-0">
-        <ul className="nav justify-content-center" id="nav-item">
-          <li className="nav-item">
-            <Link
-              to="/about"
-              className={
-                window.location.pathname === "/about"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              About Me
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/portfolio"
-              className={
-                window.location.pathname === "/portfolio"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Portfolio
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact"
-              className={
-                window.location.pathname === "/contact"
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              Contact Me
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Navbar;
