@@ -5,14 +5,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
     <div className="app">
     <BrowserRouter>
         <NavBar />
-        <Wrapper>
           <Switch>
           <Route
             exact path="/"
@@ -22,7 +20,6 @@ function App() {
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/portfolio" component={Portfolio} />
           </Switch>
-        </Wrapper>
         <Footer />
     </BrowserRouter>
     </div>
