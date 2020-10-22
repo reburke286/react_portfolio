@@ -4,14 +4,9 @@ import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput } from "mdbrea
 const Contact = () => {
   return (
     <MDBContainer>
-      <h2 className="h1-responsive font-weight-bold text-center my-5">
+      <h1 className="h1-responsive text-center my-5">
         Contact Me 
-      </h2>
-      <p className="text-center w-responsive mx-auto pb-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-        error amet numquam iure provident voluptate esse quasi, veritatis
-        totam voluptas nostrum quisquam eum porro a pariatur veniam.
-      </p>
+      </h1>
       <MDBRow>
         <MDBCol md="9" className="md-0 mb-5">
           <form>
@@ -51,7 +46,7 @@ const Contact = () => {
             </MDBRow>
           </form>
           <div className="text-center text-md-left">
-            <MDBBtn color="primary" size="md">
+            <MDBBtn className="light-blue accent-4" size="md">
               Send
             </MDBBtn>
           </div>
@@ -60,15 +55,11 @@ const Contact = () => {
           <ul className="list-unstyled mb-0">
             <li>
               <MDBIcon icon="map-marker-alt" size="2x" className="blue-text" />
-              <p>San Francisco, CA 94126, USA</p>
+              <p>Los Angeles, CA 90041, USA</p>
             </li>
             <li>
               <MDBIcon icon="phone" size="2x" className="blue-text mt-4" />
-              <p>+ 01 234 567 89</p>
-            </li>
-            <li>
-              <MDBIcon icon="envelope" size="2x" className="blue-text mt-4" />
-              <p>contact@example.com</p>
+              <p>1 (404) 987 8881</p>
             </li>
           </ul>
         </MDBCol>

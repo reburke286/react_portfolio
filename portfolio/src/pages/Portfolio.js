@@ -1,12 +1,11 @@
 import React from "react";
-import Row from "../components/Row";
-import Container from "../components/Container";
+import { MDBContainer, MDBRow} from "mdbreact";
 
 function Portfolio() {
   return (
     <div>
-      <Container>
-        <Row title={"Portfolio"}>
+      <MDBContainer>
+        <MDBRow title={"Portfolio"}>
           <div className="row">
             <div className="col-md-4">
               <div className="canisters">
@@ -14,8 +13,8 @@ function Portfolio() {
               </div>
             </div>
           </div>
-        </Row>
-      </Container>
+        </MDBRow>
+      </MDBContainer>
     </div>
   );
 }
