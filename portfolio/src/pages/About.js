@@ -1,6 +1,10 @@
 import React from "react";
-import { MDBContainer, MDBRow} from "mdbreact";
-import "./pages.css"
+import { MDBCol, MDBContainer, MDBRow} from "mdbreact";
+import "./pages.css";
+import Neil from "./images/Neil.jpeg";
+import tenK from "./images/10k.jpeg";
+import Coffee from "./images/CoffeeSelfie.jpeg";
+import BecandKate from "./images/BecandKate.jpeg";
 
 
 const About = () => {
@@ -17,6 +21,21 @@ return (
 
   <MDBRow className="mx-4 my-4">
     <h5>I found my interest of software engineering suddenly. I thought I'd never want to sit in front of a screen all day, but people change. Now I'm learning to develop and loving how challenging it is. It's frustrating and demanding and incredibly rewarding when you get it right. You enjoy that feeling for about 4 minutes and then move on to the next! Please enjoy this site and see a little bit of what I've been up to for the past 6 months. And then go ahead and reach out with that job offer.</h5>
+  </MDBRow>
+
+  <MDBRow>
+    <MDBCol md="3">
+      <img src={tenK} className="img-fluid .z-depth-1-half" alt="10k"></img>
+    </MDBCol>
+    <MDBCol md="3">
+      <img src={Neil} className="img-fluid .z-depth-1-half" alt="Neil"></img>
+    </MDBCol>
+    <MDBCol md="3">
+      <img src={Coffee} className="img-fluid .z-depth-1-half" alt="Coffee"></img>
+    </MDBCol>
+    <MDBCol md="3">
+      <img src={BecandKate} className="img-fluid .z-depth-1-half" alt="BecandKate"></img>
+    </MDBCol>
   </MDBRow>
 </MDBContainer>
 </MDBContainer> 
