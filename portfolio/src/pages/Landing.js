@@ -1,7 +1,9 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
-
+import WorkoutTracker from "./images/WorkoutTracker.png"
+import WeatherApp from "./images/WeatherApp.png"
+import EatDaBurger from "./images/EatDaBurger.png"
 const Landing = () => {
   return (
     <MDBContainer>
@@ -17,42 +19,42 @@ const Landing = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+              src={WorkoutTracker}
               alt="First slide"
             />
           <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
+            <h3 className="h3-responsive">Workout Tracker</h3>
+            <a style={{color: "white"}} href="https://frozen-island-52927.herokuapp.com/">Visit Deployed Site</a>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src={WeatherApp}
               alt="Second slide"
             />
-          <MDBMask overlay="black-strong" />
+          <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Strong mask</h3>
-            <p>Second text</p>
+            <h3 className="h3-responsive">Weather Dashboard</h3>
+            <a style={{color: "white"}} href="https://reburke286.github.io/WeatherApp/">Visit Deployed Site</a>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              src={EatDaBurger}
               alt="Third slide"
             />
-          <MDBMask overlay="black-slight" />
+          <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
+            <h3 className="h3-responsive">Eat Da Burger</h3>
+            <a style={{color: "white"}} href="https://floating-beach-21407.herokuapp.com/">Visit Deployed Site</a>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
