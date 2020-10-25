@@ -18,7 +18,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-    // const container = {height: 1300}
     return(
           <header>
             <MDBNavbar className="blue-gradient" dark expand="md" scrolling fixed="top">
@@ -36,6 +35,9 @@ class Navbar extends React.Component {
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#">Resume</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>

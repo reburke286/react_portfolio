@@ -4,8 +4,9 @@
   border-top-color: #0091ea;
 }
 
-#pfooter {
+.pfooter {
   text-align: center;
   width: 100%;
   color: gray;
+  line-height: 10px;
 }
