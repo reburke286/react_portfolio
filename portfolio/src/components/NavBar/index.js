@@ -1,15 +1,21 @@
 import React from "react";
 import "./style.css";
-import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon } from 'mdbreact';
+import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon, MDBContainer, MDBModal, MDBModalBody, MDBModalHeader} from 'mdbreact';
 
 class Navbar extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
           collapse: false,
+          modal: false
       };
       this.onClick = this.onClick.bind(this);
   }
+  toggle = () => {
+        this.setState({
+          modal: !this.state.modal
+        })
+      }
 
   onClick() {
     this.setState({
@@ -19,7 +25,7 @@ class Navbar extends React.Component {
 
   render() {
     return(
-          <header>
+      <header>
             <MDBNavbar className="blue-gradient" dark expand="md" scrolling fixed="top">
               <MDBNavbarBrand href="/">
                   <strong>/</strong>
@@ -37,7 +43,7 @@ class Navbar extends React.Component {
                     <MDBNavLink to="/portfolio">Portfolio</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#">Resume</MDBNavLink>
+                    <MDBNavLink onClick={this.toggle} to="#">Resume</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
@@ -53,7 +59,17 @@ class Navbar extends React.Component {
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>
-          </header>
+          
+          
+
+   
+        //  {/* MODAL */}
+         <MDBModal size="fluid" isOpen={this.state.modal} toggle={this.toggle}    >
+           <MDBModalHeader toggle={this.toggle}>Becca's Resume</MDBModalHeader>
+           <MDBModalBody>Resume</MDBModalBody>
+         </MDBModal>
+         </header>
+     
     );
   }
 }
