@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon, MDBContainer, MDBModal, MDBModalBody, MDBModalHeader} from 'mdbreact';
-
+import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader} from 'mdbreact';
+import Resume from "../../pages/assets/pdf/Resume_BeccaBurke2020.pdf"
 class Navbar extends React.Component {
   constructor(props) {
       super(props);
@@ -66,7 +66,9 @@ class Navbar extends React.Component {
         //  {/* MODAL */}
          <MDBModal size="fluid" isOpen={this.state.modal} toggle={this.toggle}    >
            <MDBModalHeader toggle={this.toggle}>Becca's Resume</MDBModalHeader>
-           <MDBModalBody>Resume</MDBModalBody>
+           <MDBModalBody> 
+           <iframe src={Resume} title="resume" style={{width:"100%",height:"700px"}}/>
+           </MDBModalBody>
          </MDBModal>
          </header>
      
@@ -75,3 +77,4 @@ class Navbar extends React.Component {
 }
 
 export default Navbar;
+
