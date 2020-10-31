@@ -1,9 +1,16 @@
 import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBView, MDBIcon, MDBContainer } from 'mdbreact';
+import Burger from "./images/BurgerThumbnail.JPG";
+import DayPlanner from "./images/DayPlannerThumbnail.JPG";
+import Domains from "./images/DomainNames.png";
+import Spokeo from "./images/SpokeoThumbnail.jpg";
+import Weather from "./images/WeatherThumbnail.JPG";
+import Workout from "./images/WorkoutThumbnail.JPG";
+
 
 const Portfolio = () => {
   return (
-    <MDBContainer style={{height:"1200px"}}>
+    <MDBContainer style={{height:"1400px"}}>
     <MDBRow>
       <MDBCol md='4'>
         <MDBCard narrow>
@@ -12,93 +19,125 @@ const Portfolio = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
+              src={Spokeo}
+              alt='spokeo'
             />
           </MDBView>
 
           <MDBCardBody>
             <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
+              <MDBIcon fab icon='react' /> React, Chrome Extension
             </h5>
 
             <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
+              Spokeo Chrome Extension
             </MDBCardTitle>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            Interned for Spokeo and helped build their first Chrome Extension using Chrome API, Spokeo search engine, and React for UI. Built custom regex to scrape static and dynamic web pages.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Button</MDBBtn>
+            <MDBBtn color='unique'>Visit Github</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
+
       <MDBCol md='4'>
         <MDBCard narrow>
           <MDBView cascade>
             <MDBCardImage
               hover
               overlay='white-slight'
-              className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
+              className='card-img-top fluid-img'
+              src={Burger}
+              alt='burger'
+              style={{height:"262px"}}
             />
           </MDBView>
 
           <MDBCardBody>
             <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
+              <MDBIcon fab icon='react' /> React, Handlebars
             </h5>
 
             <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
+              Eat Da Burger
             </MDBCardTitle>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            Following MVC structure, built application using Node.js, Express-Handlebars, and MySQL. This fun app allows you to add burgers into your database and update them when consumed.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Button</MDBBtn>
+            <MDBBtn color='unique'>Visit Site</MDBBtn>
           </MDBCardBody>
         </MDBCard>
-      </MDBCol>
-      <MDBCol md='4'>
+        </MDBCol>
+
+        <MDBCol md='4'>
         <MDBCard narrow>
           <MDBView cascade>
             <MDBCardImage
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
+              src={Domains}
+              alt='domains'
             />
           </MDBView>
 
           <MDBCardBody>
             <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
+              <MDBIcon fab icon='js-square' /> WHOIS API, Javascript
             </h5>
 
             <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
+              Domain Name Tracker
             </MDBCardTitle>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            Built this custom app for client Alice Computerworks. It uses WHOIS API to search for domain names' expiration date. Using Moment.js the app will tell you if the domain is set to expire within the month.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Button</MDBBtn>
+            <MDBBtn color='unique'>Visit Site</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-
+    
     </MDBRow>
 
     <MDBRow className="pt-5">
+    <MDBCol md='4'>
+        <MDBCard narrow>
+          <MDBView cascade>
+            <MDBCardImage
+              hover
+              overlay='white-slight'
+              className='card-img-top'
+              src={Workout}
+              alt='Workout'
+            />
+          </MDBView>
+
+          <MDBCardBody>
+            <h5 className='pink-text'>
+              <MDBIcon icon='database' /> Node.js, MongoDB
+            </h5>
+
+            <MDBCardTitle className='font-weight-bold'>
+            Workout Tracker
+            </MDBCardTitle>
+
+            <MDBCardText>
+            This application uses Node.js, Express/Handlebars, Mongo/Mongoose and follows MVC structure. It allows a user to both track and edit their workouts.
+            </MDBCardText>
+
+            <MDBBtn color='unique'>Visit Site</MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+
+     
+
       <MDBCol md='4'>
         <MDBCard narrow>
           <MDBView cascade>
@@ -106,26 +145,25 @@ const Portfolio = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
+              src={DayPlanner}
+              alt='planner'
             />
           </MDBView>
 
           <MDBCardBody>
             <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
+              <MDBIcon fab icon='chrome' /> Javascript, local storage
             </h5>
 
             <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
+              Daily Scheduler 
             </MDBCardTitle>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            Using javascript to manipulate the DOM, this app allows you to save daily tasks to local storage and uses Moment.js to let you know what hours have passed and which still loom.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Button</MDBBtn>
+            <MDBBtn color='unique'>Visit Site</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -136,56 +174,25 @@ const Portfolio = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
+              src={Weather}
+              alt='weather'
             />
           </MDBView>
 
           <MDBCardBody>
             <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
+              <MDBIcon fab icon='js-square' /> Ajax calls, Javascript
             </h5>
 
             <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
+              Weather Forecast
             </MDBCardTitle>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
+            Using openweathermap API and axios, built a weather application using HTML, Javascript, and CSS. Local Storage allows user to save recent searches for quick access.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Button</MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol md='4'>
-        <MDBCard narrow>
-          <MDBView cascade>
-            <MDBCardImage
-              hover
-              overlay='white-slight'
-              className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg'
-              alt='food'
-            />
-          </MDBView>
-
-          <MDBCardBody>
-            <h5 className='pink-text'>
-              <MDBIcon icon='utensils' /> Culinary
-            </h5>
-
-            <MDBCardTitle className='font-weight-bold'>
-              Cheat day inspirations
-            </MDBCardTitle>
-
-            <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.
-            </MDBCardText>
-
-            <MDBBtn color='unique'>Button</MDBBtn>
+            <MDBBtn color='unique'>Visit Site</MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
