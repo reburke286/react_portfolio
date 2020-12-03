@@ -37,7 +37,7 @@ const Portfolio = () => {
             Interned for Spokeo and helped build their first Chrome Extension using Chrome API, Spokeo search engine, and React for UI. Built custom regex to scrape static and dynamic web pages.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Github</MDBBtn>
+            <MDBBtn color='unique'><a href="https://youtu.be/_7ZICCVix9A" style={{color: "white"}}>See Example</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -68,7 +68,7 @@ const Portfolio = () => {
             Following MVC structure, built application using Node.js, Express-Handlebars, and MySQL. This fun app allows you to add burgers into your database and update them when consumed.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Site</MDBBtn>
+            <MDBBtn color='unique'><a href="https://floating-beach-21407.herokuapp.com/" style={{color: "white"}}>Visit Site</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
         </MDBCol>
@@ -98,7 +98,7 @@ const Portfolio = () => {
             Built this custom app for client Alice Computerworks. It uses WHOIS API to search for domain names' expiration date. Using Moment.js the app will tell you if the domain is set to expire within the month.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Site</MDBBtn>
+            <MDBBtn color='unique'><a href="https://reburke286.github.io/DomainName/" style={{color: "white"}}>Visit Site</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -131,7 +131,7 @@ const Portfolio = () => {
             This application uses Node.js, Express/Handlebars, Mongo/Mongoose and follows MVC structure. It allows a user to both track and edit their workouts.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Site</MDBBtn>
+            <MDBBtn color='unique'><a href="https://frozen-island-52927.herokuapp.com/" style={{color: "white"}}>Visit Site</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -163,7 +163,7 @@ const Portfolio = () => {
             Using javascript to manipulate the DOM, this app allows you to save daily tasks to local storage and uses Moment.js to let you know what hours have passed and which still loom.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Site</MDBBtn>
+            <MDBBtn color='unique'><a style={{color: "white"}}href="https://reburke286.github.io/DayPlanner/">Visit Site</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -192,7 +192,7 @@ const Portfolio = () => {
             Using openweathermap API and axios, built a weather application using HTML, Javascript, and CSS. Local Storage allows user to save recent searches for quick access.
             </MDBCardText>
 
-            <MDBBtn color='unique'>Visit Site</MDBBtn>
+            <MDBBtn color='unique'><a href="https://reburke286.github.io/WeatherApp/" style={{color: "white"}}>Visit Site</a></MDBBtn>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>

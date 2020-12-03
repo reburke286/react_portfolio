@@ -67,7 +67,7 @@ class Navbar extends React.Component {
          <MDBModal size="fluid" isOpen={this.state.modal} toggle={this.toggle}    >
            <MDBModalHeader toggle={this.toggle}>Becca's Resume</MDBModalHeader>
            <MDBModalBody> 
-           <iframe src={Resume} title="resume" style={{width:"100%",height:"700px"}}/>
+           <iframe src={Resume} title="resume" />
            </MDBModalBody>
          </MDBModal>
          </header>
