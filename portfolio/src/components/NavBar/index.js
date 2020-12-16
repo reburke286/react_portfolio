@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
 import {MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBIcon, MDBModal, MDBModalBody, MDBModalHeader} from 'mdbreact';
-import Resume from "../../pages/assets/pdf/Resume_BeccaBurke2020.pdf"
+import Resume from "../../pages/assets/pdf/BECCA BURKE (1).pdf"
+
 class Navbar extends React.Component {
   constructor(props) {
       super(props);
@@ -60,8 +61,6 @@ class Navbar extends React.Component {
               </MDBCollapse>
             </MDBNavbar>
           
-          
-
    
         //  {/* MODAL */}
          <MDBModal size="fluid" isOpen={this.state.modal} toggle={this.toggle}    >

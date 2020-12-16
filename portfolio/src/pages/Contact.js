@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {  MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn, MDBInput, MDBModal, MDBModalBody, MDBModalHeader} from "mdbreact";
+import axios from "axios";
+
 class Contact extends Component {
 
   //Modal Functions
@@ -11,6 +13,8 @@ class Contact extends Component {
     };
     this.onClick = this.onClick.bind(this);
 }
+
+
 toggle = () => {
       this.setState({
         modal: !this.state.modal
@@ -43,13 +47,16 @@ onClick() {
     if (!this.state.name || !this.state.email || !this.state.message) {
       alert("Fill out all fields please!");
     } 
-
+  
     const msg = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message
     }
-    console.log(msg)
+    axios.post("/msg", msg).then(function (req, res) {
+      console.log(msg)
+    })
+    
 
     this.toggle();
     this.setState({
